@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora hecha con js </title>
+    <meta name="author" content="RosarioS">
+    <meta  name="description" content="Calculadora con javascript">
+    <meta name="keywords" content="javascript,numeros,calculadora">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="jumbotron">
+          <div class="container col-sm-12  col-md-6">
+            <h1 class="display-4" >Calculadora con javascript</h1>
+             <div class="calculadora">
+                 <input type="text" id="visor" class="visor" size="13"/>
+                 <br>
+                 <input type="submit" class="boton" value="7" onclick="presionar(7);"/>
+                 <input type="submit" class="boton" value="8" onclick="presionar(8);"/>
+                 <input type="submit" class="boton" value="9" onclick="presionar(9);"/>
+                 <input type="submit" class="boton" value="/" onclick="presionar('/')"/>
+                 <br>
+                 <input type="submit" class="boton" value="4" onclick="presionar(4);"/>
+                 <input type="submit" class="boton" value="5" onclick="presionar(5);"/>
+                 <input type="submit" class="boton" value="6" onclick="presionar(6);"/>
+                 <input type="submit" class="boton" value="*" onclick="presionar('*')"/>
+                 <br>
+                 <input type="submit" class="boton" value="1" onclick="presionar(1);"/>
+                 <input type="submit" class="boton" value="2" onclick="presionar(2);"/>
+                 <input type="submit" class="boton" value="3" onclick="presionar(3);"/>
+                 <input type="submit" class="boton" value="+" onclick="presionar('+')"/>
+                 <br>
+                 <input type="submit" class="boton" value="0" onclick="presionar(0);"/>
+                 <input type="submit" class="boton" value="=" onclick="calcular();"/>
+                 <input type="submit" class="boton" value="C" onclick="limpiar();"/>
+                 <input type="submit" class="boton" value="-" onclick="presionar('-')"/>
+             </div>
+         </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
